@@ -1,0 +1,41 @@
+name: local_link
+description: "messaging app for users on the same network"
+publish_to: 'none' # Prevents accidental publishing
+
+environment:
+  # Using a flexible range for Dart SDK compatible with current Flutter versions
+  # This typically covers Flutter's bundled Dart SDK 3.0.0 and above.
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Existing non-Firebase dependencies
+  network_info_plus: ^5.0.0
+  permission_handler: ^11.3.1
+  wifi_scan: ^0.4.0
+  cryptography: ^2.7.0
+
+
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.2.2
+
+
+  # Updated Firebase dependencies to their latest stable versions
+  # Please always check pub.dev for the absolute latest if you encounter issues
+  firebase_core: ^2.27.0         # Current stable version for core Firebase functionality
+  firebase_database: ^10.4.0    # Current stable version for Realtime Database
+  #firebase_in_app_messaging: ^0.8.1+3 # Current stable version for In-App Messaging
+  firebase_auth: ^4.17.0      # Current stable version for Authentication
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0 # Updated to a common recent version, was ^5.0.0 which might be too high
+
+flutter:
+  uses-material-design: true
+
+
