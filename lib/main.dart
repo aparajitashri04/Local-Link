@@ -22,13 +22,12 @@ Future<void> main() async {
     "https://local-link-63f75-default-rtdb.asia-southeast1.firebasedatabase.app",
   );
 
-  // ✅ Load saved user data from SharedPreferences
+  //user data from SharedPreferences if user is logged in
   final prefs = await SharedPreferences.getInstance();
   final userId = prefs.getString('user_id');
   final userName = prefs.getString('user_name');
   final userIP = prefs.getString('user_ip');
 
-  // ✅ Run app
   runApp(MyApp(
     userId: userId,
     userName: userName,
@@ -60,7 +59,6 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
         useMaterial3: true,
       ),
-      // ✅ Navigate correctly
       home: isUserLoggedIn
           ? HomePage(
         userId: userId!,
