@@ -11,14 +11,6 @@ A modern, real-time messaging app for local network communication built with Flu
 - **User Profiles** - Manage your account information
 - **Responsive Design** - Smooth animations and intuitive UX
 
-## Screenshots
-
-- Sign Up & Login screens with gradient backgrounds
-- Network setup with automatic user discovery
-- Home page with live user list
-- Real-time chat interface
-- User profile management
-
 ## Getting Started
 
 ### Prerequisites
